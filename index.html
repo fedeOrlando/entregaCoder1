@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section> Tiene contenido tematico, habla de una sola cosa, DIV solo hace divisiones
+        Logo
+        Eslogan, descripción
+        </section>
+        <nav>aca todo el menu dentro de una lista</nav>
+    </header>
+    
+    <main>
+        <section id="filtro">
+            <h2>Filtrar Propiedades</h2>
+            <form>
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo">
+                    <option value="venta">Venta</option>
+                    <option value="alquiler">Alquiler</option>
+                </select>
+                <label for="precio">Precio máximo:</label>
+                <input type="number" name="precio" id="precio" min="0">
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+
+        <section id="propiedades">
+            <h2>Propiedades Disponibles</h2>
+            <div class="propiedad">
+                <h3>Propiedad 1</h3>
+                <p>Tipo: Venta</p>
+                <p>Precio: $100,000</p>
+                <p>Warnes al 3600, Olivos.</p>
+            </div>
+            <div class="propiedad">
+                <h3>Propiedad 2</h3>
+                <p>Tipo: Alquiler</p>
+                <p>Precio: $500/mes</p>
+                <p>rigoyen 401, Vicente López.</p>
+            </div>
+            <!-- Agregar más propiedades aquí -->
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <footer>
+        <p>&copy; 2024 Orlando Real Estate. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
